@@ -5,13 +5,13 @@ import redis
 app = Flask(__name__)
 
 # Connect to Redis
-cache = redis.Redis(host='yourID-redis', port=6379)
+cache = redis.Redis(host='c0936083-redis', port=6379)
 
 # Connect to PostgreSQL
 def get_db_connection():
-    conn = psycopg2.connect(host="yourID-db",
+    conn = psycopg2.connect(host="c0936083-db",
                             database="mydb",
-                            user="yourID",
+                            user="c0936083",
                             password="pass123")
     return conn
 
